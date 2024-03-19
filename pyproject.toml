@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "kafka-playground"
+version = "0.1.0"
+description = "Kafka Consumer & Producer"
+authors = ["aunghpone.myat <aunghpone.myat@frontiir.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymysql = "^1.1.0"
+asyncmy = "^0.2.9"
+SQLAlchemy = {extras = ["asyncio"], version = "^2.0.28"}
+kafka-python = "^2.0.2"
+aiokafka = "^0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.3"
+isort = "^5.13.2"
+pytest = "^8.1.1"
+pytest-asyncio = "^0.23.6"
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# sort imports
+isort .
+
+# format code
+ruff .

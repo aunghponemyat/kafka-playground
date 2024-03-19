@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#
+# This script installs only the project package and its runtime dependencies.
+# Not for development environment.
+#
+
+ poetry install --only main --sync

@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Kafka Consumer & Producer"
 authors = ["aunghpone.myat <aunghpone.myat@frontiir.net>"]
 readme = "README.md"
+packages = [{include = "kafka_test", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -12,6 +13,10 @@ asyncmy = "^0.2.9"
 SQLAlchemy = {extras = ["asyncio"], version = "^2.0.28"}
 kafka-python = "^2.0.2"
 aiokafka = "^0.10.0"
+sqlalchemy-utils = "^0.41.1"
+pydantic-settings = "^2.2.1"
+structlog = "^24.1.0"
+colorama = "^0.4.6"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.3.3"

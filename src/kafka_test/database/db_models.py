@@ -1,12 +1,12 @@
 from datetime import datetime
 
 import pymysql
-from sqlalchemy import Boolean, Column, DateTime, Float, Integer, String, create_engine
+from sqlalchemy import Boolean, Column, DateTime, Integer, String, create_engine
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import declarative_base
 from sqlalchemy_utils import create_database, database_exists
 
-from kafka.models.config import Settings, get_settings
+from kafka_test.models.config import Settings, get_settings
 
 settings: Settings = get_settings()
 
@@ -57,33 +57,6 @@ class Client(Base):
     client_id = Column(String(255), primary_key=True)
     client_mac = Column(String(20), nullable=False)
     client_ip = Column(String(20), nullable=False)
-
-class Service(Base):
-    __tablename__ = "service"
-
-    package_id = Column(Integer, primary_key=True)
-    service_id = Column(String(255))
-    installation_id = Column(String(255))
-    max_speed = Column(Float, nullable=False)
-    min_speed = Column(Float, nullable=False)
-    speed_qualifier = Column(String(255))
-    tc_reference_id = Column(String(255))
-    offpeak = Column(Integer)
-    multiplier_ignore = Column(Integer)
-    interim_interval = Column(Integer)
-    multiplier_index_value = Column(Integer)
-    is_high_speed = Column(Boolean)
-    service_name = Column(String(255), default='N/A')
-    installation_name = Column(String(255), default='N/A')
-    installation_category = Column(String(255), default='N/A')
-
-class Subscription(Base):
-    __tablename__ = "subscriptions"
-
-    plan_id = Column(String(255), primary_key=True)
-    client_id = Column(String(255), nullable=False)
-    package_id = Column(Integer, nullable=False)
-    status = Column(String(20), nullable=False)
 
 def init_db(dsn: str):
     try:

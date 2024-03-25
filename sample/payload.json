@@ -1,0 +1,20 @@
+[
+    {
+        "event": "COMMITTED",
+        "hops": 0,
+        "hwaddr": "88:30:bc:60:d2:b3",
+        "lease4addr": "10.7.165.122",
+        "lease4cltt": 1227209316,
+        "lease4validlft": 49,
+        "localaddr": "255.255.255.255",
+        "localport": 99,
+        "opt55": null,
+        "opt60": "0x4F70656E5752543A534350303030313137",
+        "opt82sub1": "0x302F312F322F5343534F41434131453943382F",
+        "opt82sub2": "0xC4700BDFDF00",
+        "relayed": false,
+        "remoteaddr": "172.18.191.49",
+        "remoteport": 68
+    }
+    
+]

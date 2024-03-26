@@ -64,10 +64,10 @@ def init_db(dsn: str):
         engine = create_engine(
             dsn,
             pool_pre_ping=True,
-            pool_recycle=settings.tidb_pool_recycle,
+            pool_recycle=settings.db_pool_recycle,
             connect_args={
-                "read_timeout": settings.tidb_read_timeout,
-                "write_timeout": settings.tidb_write_timeout
+                "read_timeout": settings.db_read_timeout,
+                "write_timeout": settings.db_write_timeout
             }
         )
         if not database_exists(engine.url):

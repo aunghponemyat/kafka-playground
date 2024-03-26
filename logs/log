@@ -81,3 +81,805 @@ AttributeError: 'NoneType' object has no attribute 'info'
 2024-03-25 17:12:09 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
 2024-03-25 17:12:09 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
 2024-03-25 17:12:09 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:06:54 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:06:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:06:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]> returned error 111. Disconnecting.
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:06:54 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:06:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:06:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:06:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:07:47 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:07:47 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:07:47 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:07:47 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:07:47 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:07:47 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:07:47 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:07:47 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:07:47 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:07:47 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:07:47 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:07:47 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:07:47 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:07:47 [INFO    ] (Re-)joining group devid
+2024-03-26 14:07:47 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:07:47 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:07:47 [INFO    ] Successfully joined group devid with generation 1
+2024-03-26 14:07:47 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:07:47 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:07:47 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:37:47.471240Z' logger='kafka_test.consumer'
+2024-03-26 14:08:44 [INFO    ] event='COMMITTED' message='Same hash exists! Skipping...' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88:30:bc:60:d2:b3", "lease4addr": "10.7.165.122", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:38:44.908206Z' logger='kafka_test.consumer'
+2024-03-26 14:09:02 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:09:02 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:09:02 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:09:02 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:09:02 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:10:35 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:10:35 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:10:35 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:10:35 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:10:35 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:10:36 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:10:36 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:10:36 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:10:36 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:10:36 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:10:36 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:10:36 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:10:36 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:10:36 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:10:36 [INFO    ] (Re-)joining group devid
+2024-03-26 14:10:36 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:10:36 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:10:36 [INFO    ] Successfully joined group devid with generation 3
+2024-03-26 14:10:36 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:10:36 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:10:36 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:40:36.309901Z' logger='kafka_test.consumer'
+2024-03-26 14:12:42 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:12:42 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:12:42 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:12:42 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:12:42 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:12:54 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:12:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:12:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:12:54 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:12:54 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:12:54 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:12:54 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:12:54 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:12:54 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:12:54 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:12:54 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:12:54 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:12:54 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:12:54 [INFO    ] (Re-)joining group devid
+2024-03-26 14:12:54 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:12:54 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:12:54 [INFO    ] Successfully joined group devid with generation 5
+2024-03-26 14:12:54 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:12:54 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:12:54 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:42:54.833998Z' logger='kafka_test.consumer'
+2024-03-26 14:12:58 [INFO    ] event='COMMITTED' message='Same hash exists! Skipping...' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88:30:bc:60:d2:b3", "lease4addr": "10.7.165.122", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:42:58.485540Z' logger='kafka_test.consumer'
+2024-03-26 14:13:31 [INFO    ] event='COMMITTED' correlation_id='40642ba8-cc51-4e99-96a6-d231cff4548a' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-60-D2-45", "lease4addr": "10.7.165.34", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:43:31.903531Z' logger='kafka_test.consumer'
+2024-03-26 14:15:01 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:15:01 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:15:01 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:15:01 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:15:05 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:15:05 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:15:05 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:15:05 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:15:05 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:15:05 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:15:05 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:15:05 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:15:05 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:15:05 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:15:05 [INFO    ] (Re-)joining group devid
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:15:05 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:15:05 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:15:05 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:15:05 [INFO    ] Successfully joined group devid with generation 7
+2024-03-26 14:15:05 [INFO    ] Updated partition assignment: []
+2024-03-26 14:15:05 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:15:05 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:15:05 [INFO    ] (Re-)joining group devid
+2024-03-26 14:15:05 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:15:05 [INFO    ] Successfully joined group devid with generation 8
+2024-03-26 14:15:05 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:15:05 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:15:05 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:45:05.933769Z' logger='kafka_test.consumer'
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:15:05 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:15:25 [INFO    ] event='COMMITTED' correlation_id='12df22e9-c8dd-416a-a95f-84a29c70c77e' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-60-D2-46", "lease4addr": "10.7.165.33", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:45:25.073091Z' logger='kafka_test.consumer'
+2024-03-26 14:15:25 [INFO    ] consumer1 event='Manage Client' message='Failed' correlation_id='12df22e9-c8dd-416a-a95f-84a29c70c77e' reason='Object of type Client is not JSON serializable' timestamp='2024-03-26T07:45:25.402952Z' logger='kafka_test.workflow'
+2024-03-26 14:17:24 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:17:24 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:17:24 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:17:24 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:17:24 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:17:29 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:17:29 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:17:29 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:17:29 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:17:29 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:17:29 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:17:29 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:17:29 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:17:29 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:17:29 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:17:29 [INFO    ] (Re-)joining group devid
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:17:29 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:17:29 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:17:29 [INFO    ] Successfully joined group devid with generation 10
+2024-03-26 14:17:29 [INFO    ] Updated partition assignment: []
+2024-03-26 14:17:29 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:17:29 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:17:29 [INFO    ] (Re-)joining group devid
+2024-03-26 14:17:29 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:17:29 [INFO    ] Successfully joined group devid with generation 11
+2024-03-26 14:17:29 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:17:29 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:17:29 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:47:29.317092Z' logger='kafka_test.consumer'
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:17:29 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:17:32 [INFO    ] event='COMMITTED' message='Same hash exists! Skipping...' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88:30:bc:60:d2:46", "lease4addr": "10.7.165.33", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:47:32.614659Z' logger='kafka_test.consumer'
+2024-03-26 14:17:46 [INFO    ] event='COMMITTED' correlation_id='20c6ee70-da42-4628-b87b-653d29e747bb' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-60-D2-47", "lease4addr": "10.7.165.35", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:47:46.384348Z' logger='kafka_test.consumer'
+2024-03-26 14:17:46 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='20c6ee70-da42-4628-b87b-653d29e747bb' payload='<kafka_test.database.db_models.Client object at 0x7589bc342050>' timestamp='2024-03-26T07:47:46.704477Z' logger='kafka_test.workflow'
+2024-03-26 14:21:50 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:21:50 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:21:50 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:21:50 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:21:50 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:21:55 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:21:55 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:21:55 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:21:55 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:21:55 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:21:55 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:21:55 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:21:55 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:21:55 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:21:55 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:21:55 [INFO    ] (Re-)joining group devid
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:21:55 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:21:55 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:21:55 [INFO    ] Successfully joined group devid with generation 13
+2024-03-26 14:21:55 [INFO    ] Updated partition assignment: []
+2024-03-26 14:21:55 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:21:55 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:21:55 [INFO    ] (Re-)joining group devid
+2024-03-26 14:21:55 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:21:55 [INFO    ] Successfully joined group devid with generation 14
+2024-03-26 14:21:55 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:21:55 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:21:55 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:51:55.393445Z' logger='kafka_test.consumer'
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:21:55 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:22:16 [INFO    ] event='COMMITTED' correlation_id='271134f4-dc7d-4c0a-9210-2ffa129f41b3' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-D2-47", "lease4addr": "10.7.165.38", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:52:16.665663Z' logger='kafka_test.consumer'
+2024-03-26 14:22:17 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='271134f4-dc7d-4c0a-9210-2ffa129f41b3' payload='{}' timestamp='2024-03-26T07:52:17.027905Z' logger='kafka_test.workflow'
+2024-03-26 14:23:51 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:23:51 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:23:51 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:23:51 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:23:51 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:24:15 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:24:15 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:24:15 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:24:15 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:24:15 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:24:16 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:24:16 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:24:16 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:24:16 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:24:16 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:24:16 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:24:16 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:24:16 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:24:16 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:24:16 [INFO    ] (Re-)joining group devid
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:24:16 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:24:16 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:24:16 [INFO    ] Successfully joined group devid with generation 16
+2024-03-26 14:24:16 [INFO    ] Updated partition assignment: []
+2024-03-26 14:24:16 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:24:16 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:24:16 [INFO    ] (Re-)joining group devid
+2024-03-26 14:24:16 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:24:16 [INFO    ] Successfully joined group devid with generation 17
+2024-03-26 14:24:16 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:24:16 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:24:16 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:54:16.140029Z' logger='kafka_test.consumer'
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:24:16 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:24:21 [INFO    ] event='COMMITTED' correlation_id='42ad7c51-e09d-450a-af84-e8606c61153d' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-D2-47", "lease4addr": "10.7.165.38", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:54:21.556924Z' logger='kafka_test.consumer'
+2024-03-26 14:24:21 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='42ad7c51-e09d-450a-af84-e8606c61153d' payload='{}' timestamp='2024-03-26T07:54:21.870949Z' logger='kafka_test.workflow'
+2024-03-26 14:24:54 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:24:54 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:24:54 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:24:54 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:24:54 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:25:00 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:25:00 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:25:00 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:25:00 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:25:00 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:25:00 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:25:00 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:25:00 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:25:00 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:25:00 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:25:00 [INFO    ] (Re-)joining group devid
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:25:00 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:25:00 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:25:00 [INFO    ] Successfully joined group devid with generation 19
+2024-03-26 14:25:00 [INFO    ] Updated partition assignment: []
+2024-03-26 14:25:00 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:25:00 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:25:00 [INFO    ] (Re-)joining group devid
+2024-03-26 14:25:00 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:25:00 [INFO    ] Successfully joined group devid with generation 20
+2024-03-26 14:25:00 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:25:00 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:25:00 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:55:00.409802Z' logger='kafka_test.consumer'
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:25:00 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:25:12 [INFO    ] event='COMMITTED' correlation_id='a71223bf-055c-4610-a495-8e7ff2c4079b' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-D2-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:55:12.310282Z' logger='kafka_test.consumer'
+2024-03-26 14:25:12 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='a71223bf-055c-4610-a495-8e7ff2c4079b' payload='{}' timestamp='2024-03-26T07:55:12.634702Z' logger='kafka_test.workflow'
+2024-03-26 14:26:11 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:26:11 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:26:11 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:26:11 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:26:11 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:26:17 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:26:17 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:26:17 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:26:17 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:26:17 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:26:17 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:26:17 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:26:17 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:26:17 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:26:17 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:26:17 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:26:17 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:26:17 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:26:17 [INFO    ] (Re-)joining group devid
+2024-03-26 14:26:17 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:26:17 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:26:17 [INFO    ] Successfully joined group devid with generation 22
+2024-03-26 14:26:17 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:26:17 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:26:17 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:56:17.350773Z' logger='kafka_test.consumer'
+2024-03-26 14:26:21 [INFO    ] event='COMMITTED' correlation_id='74691886-7644-42a6-9a61-37f5df2265d9' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-D2-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:56:21.533285Z' logger='kafka_test.consumer'
+2024-03-26 14:26:21 [INFO    ] event='INVALIDATED' correlation_id='a71223bf-055c-4610-a495-8e7ff2c4079b' message='Session ended' timestamp='2024-03-26T07:56:21.676338Z' logger='kafka_test.consumer'
+2024-03-26 14:26:21 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='74691886-7644-42a6-9a61-37f5df2265d9' payload='{}' timestamp='2024-03-26T07:56:21.947645Z' logger='kafka_test.workflow'
+2024-03-26 14:27:02 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:27:02 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:27:02 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:27:02 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:27:02 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:27:18 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:27:18 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:27:18 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:27:18 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:27:18 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:27:18 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:27:18 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:27:18 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:27:18 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:27:18 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:27:18 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:27:18 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:27:18 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:27:18 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:27:19 [INFO    ] (Re-)joining group devid
+2024-03-26 14:27:19 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:27:19 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:27:19 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:27:19 [INFO    ] Successfully joined group devid with generation 24
+2024-03-26 14:27:19 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:27:19 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:27:19 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:57:19.105473Z' logger='kafka_test.consumer'
+2024-03-26 14:27:22 [INFO    ] event='COMMITTED' message='Same hash exists! Skipping...' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88:30:bc:6e:d2:48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:57:22.076131Z' logger='kafka_test.consumer'
+2024-03-26 14:27:34 [INFO    ] event='COMMITTED' correlation_id='76d1a56a-09a4-49af-aebd-2c6b7e9274a3' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:57:34.980453Z' logger='kafka_test.consumer'
+2024-03-26 14:27:35 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='76d1a56a-09a4-49af-aebd-2c6b7e9274a3' payload='{}' timestamp='2024-03-26T07:57:35.357093Z' logger='kafka_test.workflow'
+2024-03-26 14:29:33 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:29:33 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:29:33 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:29:33 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:29:33 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:29:48 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:29:48 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:29:48 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:29:48 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:29:48 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:29:48 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:29:48 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:29:48 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:29:48 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:29:48 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:29:48 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:29:48 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:29:48 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:29:48 [INFO    ] (Re-)joining group devid
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:29:48 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:29:48 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:29:48 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:29:48 [INFO    ] Successfully joined group devid with generation 26
+2024-03-26 14:29:48 [INFO    ] Updated partition assignment: []
+2024-03-26 14:29:48 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:29:48 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:29:48 [INFO    ] (Re-)joining group devid
+2024-03-26 14:29:48 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:29:48 [INFO    ] Successfully joined group devid with generation 27
+2024-03-26 14:29:48 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:29:48 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:29:48 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T07:59:48.735552Z' logger='kafka_test.consumer'
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:29:48 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:29:51 [INFO    ] event='COMMITTED' correlation_id='2d5e5a06-6a59-4b88-9b50-8da8b6d45f0d' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T07:59:51.498063Z' logger='kafka_test.consumer'
+2024-03-26 14:29:51 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='2d5e5a06-6a59-4b88-9b50-8da8b6d45f0d' payload='{}' timestamp='2024-03-26T07:59:51.855275Z' logger='kafka_test.workflow'
+2024-03-26 14:31:17 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:31:17 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:31:17 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:31:17 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:31:17 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:31:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:31:23 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:31:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:31:24 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:31:24 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:31:24 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:31:24 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:31:24 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:31:24 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:31:24 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:31:24 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:31:24 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:31:24 [INFO    ] (Re-)joining group devid
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:31:24 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:31:24 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:31:24 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:31:24 [INFO    ] Successfully joined group devid with generation 29
+2024-03-26 14:31:24 [INFO    ] Updated partition assignment: []
+2024-03-26 14:31:24 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:31:24 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:31:24 [INFO    ] (Re-)joining group devid
+2024-03-26 14:31:24 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:31:24 [INFO    ] Successfully joined group devid with generation 30
+2024-03-26 14:31:24 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:31:24 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:31:24 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:01:24.159176Z' logger='kafka_test.consumer'
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:31:24 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:31:32 [INFO    ] event='COMMITTED' correlation_id='0f7f2189-388a-4179-b4e3-fbe093d685a1' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:01:32.527117Z' logger='kafka_test.consumer'
+2024-03-26 14:31:33 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='0f7f2189-388a-4179-b4e3-fbe093d685a1' payload='{}' timestamp='2024-03-26T08:01:33.466252Z' logger='kafka_test.workflow'
+2024-03-26 14:32:08 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:32:08 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:32:08 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:32:08 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:32:08 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:32:23 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:32:23 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:32:23 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:32:23 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:32:23 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:32:23 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:32:23 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:32:23 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:32:23 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:32:23 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:32:23 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:32:23 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:32:23 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:32:23 [INFO    ] (Re-)joining group devid
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:32:23 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:32:23 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:32:23 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:32:23 [INFO    ] Successfully joined group devid with generation 32
+2024-03-26 14:32:23 [INFO    ] Updated partition assignment: []
+2024-03-26 14:32:23 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:32:23 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:32:23 [INFO    ] (Re-)joining group devid
+2024-03-26 14:32:23 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:32:23 [INFO    ] Successfully joined group devid with generation 33
+2024-03-26 14:32:23 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:32:23 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:32:23 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:02:23.607599Z' logger='kafka_test.consumer'
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:32:23 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:32:26 [INFO    ] event='COMMITTED' correlation_id='af59d95c-1d97-416a-9c2a-82cb97f494a6' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:02:26.475205Z' logger='kafka_test.consumer'
+2024-03-26 14:32:26 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='af59d95c-1d97-416a-9c2a-82cb97f494a6' payload='{}' timestamp='2024-03-26T08:02:26.803833Z' logger='kafka_test.workflow'
+2024-03-26 14:33:15 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:33:15 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:33:15 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:33:15 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:33:15 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:33:19 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:33:19 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:33:19 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:33:19 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:33:19 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:33:19 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:33:19 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:33:19 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:33:19 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:33:19 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:33:19 [INFO    ] (Re-)joining group devid
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:33:19 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:33:19 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:33:19 [INFO    ] Successfully joined group devid with generation 35
+2024-03-26 14:33:19 [INFO    ] Updated partition assignment: []
+2024-03-26 14:33:19 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:33:19 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:33:19 [INFO    ] (Re-)joining group devid
+2024-03-26 14:33:19 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:33:19 [INFO    ] Successfully joined group devid with generation 36
+2024-03-26 14:33:19 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:33:19 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:33:19 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:03:19.957592Z' logger='kafka_test.consumer'
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:33:19 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:33:26 [INFO    ] event='COMMITTED' correlation_id='163d7cea-a9bc-4e21-9af6-268bacf833bb' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:03:26.921169Z' logger='kafka_test.consumer'
+2024-03-26 14:33:27 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='163d7cea-a9bc-4e21-9af6-268bacf833bb' payload='{'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x709ab5b4ea40>}' timestamp='2024-03-26T08:03:27.255116Z' logger='kafka_test.workflow'
+2024-03-26 14:34:25 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:34:25 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:34:25 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:34:25 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:34:25 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:34:29 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:34:29 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:34:29 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:34:29 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:34:30 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:34:30 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:34:30 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:34:30 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:34:30 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:34:30 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:34:30 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:34:30 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:34:30 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:34:30 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:34:30 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:34:30 [INFO    ] (Re-)joining group devid
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:34:30 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:34:30 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:34:30 [INFO    ] Successfully joined group devid with generation 38
+2024-03-26 14:34:30 [INFO    ] Updated partition assignment: []
+2024-03-26 14:34:30 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:34:30 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:34:30 [INFO    ] (Re-)joining group devid
+2024-03-26 14:34:30 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:34:30 [INFO    ] Successfully joined group devid with generation 39
+2024-03-26 14:34:30 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:34:30 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:34:30 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:04:30.264003Z' logger='kafka_test.consumer'
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:34:30 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:34:39 [INFO    ] event='COMMITTED' correlation_id='8eb73feb-a374-430c-9827-d3f4882bd7d4' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:04:39.081278Z' logger='kafka_test.consumer'
+2024-03-26 14:34:39 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='8eb73feb-a374-430c-9827-d3f4882bd7d4' payload='{'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x76f6f4353100>}' timestamp='2024-03-26T08:04:39.473190Z' logger='kafka_test.workflow'
+2024-03-26 14:35:44 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:35:44 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:35:44 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:35:44 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:35:44 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:36:12 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:36:12 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:36:12 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:36:12 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:36:12 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:36:12 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:36:12 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:36:12 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:36:12 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:36:12 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:36:12 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:36:12 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:36:12 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:36:12 [INFO    ] (Re-)joining group devid
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:36:12 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:36:12 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:36:12 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:36:12 [INFO    ] Successfully joined group devid with generation 41
+2024-03-26 14:36:12 [INFO    ] Updated partition assignment: []
+2024-03-26 14:36:12 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:36:12 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:36:12 [INFO    ] (Re-)joining group devid
+2024-03-26 14:36:12 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:36:12 [INFO    ] Successfully joined group devid with generation 42
+2024-03-26 14:36:12 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:36:12 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:36:12 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:06:12.512544Z' logger='kafka_test.consumer'
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:36:12 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:36:18 [INFO    ] event='COMMITTED' correlation_id='a000df30-415b-49aa-ae64-677615cb5f3d' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:06:18.414692Z' logger='kafka_test.consumer'
+2024-03-26 14:36:18 [INFO    ] consumer1 event='Manage Client' message='Failed' correlation_id='a000df30-415b-49aa-ae64-677615cb5f3d' reason=''Client' object has no attribute 'model_dump'' timestamp='2024-03-26T08:06:18.901549Z' logger='kafka_test.workflow'
+2024-03-26 14:36:47 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:36:47 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:36:47 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:36:47 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:36:47 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:37:01 [INFO    ] Probing node bootstrap-1 broker version
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:37:01 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:37:01 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:37:01 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:37:01 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:37:01 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:37:01 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:37:01 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:37:01 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:37:01 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:37:01 [INFO    ] (Re-)joining group devid
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:37:01 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:37:01 [INFO    ] Successfully joined group devid with generation 44
+2024-03-26 14:37:01 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:37:01 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:37:01 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:07:01.676489Z' logger='kafka_test.consumer'
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:37:01 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:37:08 [INFO    ] event='COMMITTED' correlation_id='5f928f50-1ff2-408e-b82a-d16072ef351d' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:07:08.228359Z' logger='kafka_test.consumer'
+2024-03-26 14:37:08 [INFO    ] consumer1 event='Manage Client' message='Failed' correlation_id='5f928f50-1ff2-408e-b82a-d16072ef351d' reason=''Client' object has no attribute 'model_dump'' timestamp='2024-03-26T08:07:08.608139Z' logger='kafka_test.workflow'
+2024-03-26 14:45:38 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:45:38 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:45:38 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:45:38 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:45:38 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:45:43 [INFO    ] Probing node bootstrap-0 broker version
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:45:43 [INFO    ] Broker version identified as 2.5.0
+2024-03-26 14:45:43 [INFO    ] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-03-26 14:45:43 [INFO    ] Updating subscribed topics to: ('kafka_test',)
+2024-03-26 14:45:43 [WARNING ] subscription unchanged by change_subscription(['kafka_test'])
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:45:43 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:45:43 [INFO    ] Group coordinator for devid is BrokerMetadata(nodeId='coordinator-0', host='braun', port=9092, rack=None)
+2024-03-26 14:45:43 [INFO    ] Discovered coordinator coordinator-0 for group devid
+2024-03-26 14:45:43 [INFO    ] Starting new heartbeat thread
+2024-03-26 14:45:43 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:45:43 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:45:44 [INFO    ] (Re-)joining group devid
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: connecting to localhost:9093 [('127.0.0.1', 9093) IPv4]
+2024-03-26 14:45:44 [ERROR   ] Connect attempt to <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]> returned error 111. Disconnecting.
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=bootstrap-1 host=localhost:9093 <connecting> [IPv4 ('127.0.0.1', 9093)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2024-03-26 14:45:44 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:45:44 [WARNING ] No partition metadata for topic kafka_test
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+2024-03-26 14:45:44 [INFO    ] Successfully joined group devid with generation 46
+2024-03-26 14:45:44 [INFO    ] Updated partition assignment: []
+2024-03-26 14:45:44 [INFO    ] Setting newly assigned partitions set() for group devid
+2024-03-26 14:45:44 [INFO    ] Revoking previously assigned partitions set() for group devid
+2024-03-26 14:45:44 [INFO    ] (Re-)joining group devid
+2024-03-26 14:45:44 [INFO    ] Elected group leader -- performing partition assignments using range
+2024-03-26 14:45:44 [INFO    ] Successfully joined group devid with generation 47
+2024-03-26 14:45:44 [INFO    ] Updated partition assignment: [TopicPartition(topic='kafka_test', partition=0)]
+2024-03-26 14:45:44 [INFO    ] Setting newly assigned partitions {TopicPartition(topic='kafka_test', partition=0)} for group devid
+2024-03-26 14:45:44 [INFO    ] event='Assigned Partition' message='Consumer is assigned to partition: 0' timestamp='2024-03-26T08:15:44.093124Z' logger='kafka_test.consumer'
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: connecting to braun:9092 [('192.168.61.12', 9092) IPv4]
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connecting> [IPv4 ('192.168.61.12', 9092)]>: Connection complete.
+2024-03-26 14:45:44 [INFO    ] <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+2024-03-26 14:45:53 [INFO    ] event='COMMITTED' correlation_id='fb82e4c1-9a32-4bff-ba01-dec0868d51aa' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-48", "lease4addr": "10.7.165.36", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:15:53.322274Z' logger='kafka_test.consumer'
+2024-03-26 14:45:55 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='fb82e4c1-9a32-4bff-ba01-dec0868d51aa' payload='{'client_id': 'SCP000117', 'client_mac': '88-30-BC-6E-DD-48', 'client_ip': '10.7.165.36'}' timestamp='2024-03-26T08:15:55.080921Z' logger='kafka_test.workflow'
+2024-03-26 14:46:49 [INFO    ] event='COMMITTED' correlation_id='2380c771-e034-4b2f-9d69-63c8c2ab5f35' message='New Payload' payload='{"event": "COMMITTED", "hops": 0, "hwaddr": "88-30-BC-6E-DD-50", "lease4addr": "10.7.165.39", "lease4cltt": 1227209316, "lease4validlft": 49, "localaddr": "255.255.255.255", "localport": 99, "opt55": null, "opt60": "0x4F70656E5752543A534350303030313137", "opt82sub1": "0x302F312F322F5343534F41434131453943382F", "opt82sub2": "0xC4700BDFDF00", "relayed": false, "remoteaddr": "172.18.191.49", "remoteport": 68}' timestamp='2024-03-26T08:16:49.785460Z' logger='kafka_test.consumer'
+2024-03-26 14:46:50 [INFO    ] consumer1 event='Update client' message='Success' correlation_id='2380c771-e034-4b2f-9d69-63c8c2ab5f35' payload='{'client_id': 'SCP000117', 'client_mac': '88-30-BC-6E-DD-50', 'client_ip': '10.7.165.39'}' timestamp='2024-03-26T08:16:50.401148Z' logger='kafka_test.workflow'
+2024-03-26 14:47:20 [INFO    ] Stopping heartbeat thread
+2024-03-26 14:47:20 [INFO    ] Leaving consumer group (devid).
+2024-03-26 14:47:20 [INFO    ] <BrokerConnection node_id=coordinator-0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:47:20 [INFO    ] <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>: Closing connection. 
+2024-03-26 14:47:20 [ERROR   ] Fetch to node 0 failed: Cancelled: <BrokerConnection node_id=0 host=braun:9092 <connected> [IPv4 ('192.168.61.12', 9092)]>

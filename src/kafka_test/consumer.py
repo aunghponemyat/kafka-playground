@@ -5,24 +5,14 @@ from kafka import ConsumerRebalanceListener, KafkaConsumer
 from kafka.errors import KafkaConnectionError, TopicAuthorizationFailedError
 from sqlalchemy.orm import sessionmaker
 
-from kafka_test.database.db_models import (
-    ClientSessions,
-    PayloadMsg,
-    init_db,
-)
+from kafka_test.database.db_models import ClientSessions, PayloadMsg, init_db
 from kafka_test.eventlog import logger
 # from lts.kore_workflow import handle_session_start, send_to_binder
 from kafka_test.models.config import Settings, get_settings
 from kafka_test.models.dhcp_models import EventTypes as ET
+from kafka_test.utils import (compute_hash, decode_hexastr, generate_uuid4,
+                              mac2EUI, parse_properties)
 from kafka_test.workflow import handle_session_start
-from kafka_test.utils import (
-    compute_hash,
-    decode_hexastr,
-    generate_uuid4,
-    mac2EUI,
-    parse_properties,
-)
-
 
 settings: Settings = get_settings()
 Session = sessionmaker(bind=init_db(settings.tidb_dsn))
@@ -126,7 +116,7 @@ def handle_committed_event(event_msg: dict, worker: str):
             if existing_payload:
                 session.add(client_sessions)
                 session.commit()
-                handle_session_start(client_sessions, event_msg, correlation_id, worker)
+                handle_session_start(client_sessions, correlation_id, worker)
             else:
                 logger.info("Duplicate data", message="Duplicate message skipped!")
 
@@ -193,13 +183,6 @@ def connect_plain_broker(topic, kafka_config: dict):
     kafka_config.pop("sasl_plain_password", None) 
     kafka_config.pop("topic", None)
     return KafkaConsumer(topic, **kafka_config)
-
-# def connect_sasl_broker(topic, kafka_config: dict):
-#     kafka_config["security_protocol"] = settings.sasl_protocol
-#     kafka_config["sasl_mechanism"] = settings.sasl_mechanism
-#     kafka_config["sasl_plain_username"] = settings.sasl_username
-#     kafka_config["sasl_plain_password"] = settings.sasl_password
-#     return KafkaConsumer(topic, **kafka_config)
 
 def initiate_consumer(consumer: KafkaConsumer, worker: str):
     if not consumer:

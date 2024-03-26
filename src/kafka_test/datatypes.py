@@ -1,6 +1,7 @@
 import re
 from ipaddress import IPv4Address, ip_address
 from typing import Dict, NamedTuple, Union
+
 from netaddr import EUI, valid_mac
 from pydantic import UUID4
 

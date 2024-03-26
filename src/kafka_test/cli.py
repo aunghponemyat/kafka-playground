@@ -1,10 +1,11 @@
-import click
 import asyncio
+
+import click
 
 from kafka_test.consumer import initialize
 from kafka_test.models.config import Settings, get_settings
-from kafka_test.utils import get_process
 from kafka_test.producer import main as produce
+from kafka_test.utils import get_process
 
 settings: Settings = get_settings()
 

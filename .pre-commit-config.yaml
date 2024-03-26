@@ -1,0 +1,26 @@
+repos:
+- repo: local
+  hooks:
+    - id: isort
+      name: isort
+      stages: [commit]
+      entry: poetry run isort
+      args: [src]
+      language: system
+      types: [python]
+      pass_filenames: false
+
+    - id: ruff check
+      name: linter
+      stages: [commit]
+      entry: poetry run ruff
+      args: [src]
+      language: system
+      types: [python]
+      pass_filenames: false
+
+    - id: build
+      name: build
+      stages: [push]
+      entry: scripts/build
+      language: script

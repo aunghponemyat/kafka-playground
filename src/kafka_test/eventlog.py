@@ -48,7 +48,7 @@ def custom_order_processor(_, __, event_dict):
 
 base_dir = os.path.dirname(os.path.realpath('.env'))
 log_path = os.path.join(base_dir, 'logs/')
-log_file_path = f"{log_path}{settings.log_directory}"
+log_file_path = f"{log_path}{settings.log_filename}"
 
 syslog_handler = SysLogHandler(address="/dev/log")
 formatter = logging.Formatter('session %(name)s %(asctime)s [%(levelname)-8s] %(message)s')
@@ -110,3 +110,5 @@ structlog.configure(
     wrapper_class=EventLogger,
     cache_logger_on_first_use=True,
 )
+
+logger: EventLogger = structlog.get_logger()

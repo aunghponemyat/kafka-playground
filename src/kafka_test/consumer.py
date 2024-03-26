@@ -1,34 +1,18 @@
 import json
 from datetime import datetime
 
-import requests
 from kafka import ConsumerRebalanceListener, KafkaConsumer
 from kafka.errors import KafkaConnectionError, TopicAuthorizationFailedError
-from requests import RequestException
 from sqlalchemy.orm import sessionmaker
 
-from kafka_test.database.db_models import (
-    ClientSessions,
-    PayloadMsg,
-    Service,
-    Subscription,
-    init_db,
-)
-from kafka_test.get_logger import get_instance_logger
+from kafka_test.database.db_models import ClientSessions, PayloadMsg, init_db
+from kafka_test.eventlog import logger
 # from lts.kore_workflow import handle_session_start, send_to_binder
 from kafka_test.models.config import Settings, get_settings
 from kafka_test.models.dhcp_models import EventTypes as ET
-from kafka_test.models.dhcp_models import SessionBinder
-from kafka_test.utils import (
-    BinderApiException,
-    compute_hash,
-    decode_hexastr,
-    generate_uuid4,
-    mac2EUI,
-    parse_properties,
-)
-
-logger = None
+from kafka_test.utils import (compute_hash, decode_hexastr, generate_uuid4,
+                              mac2EUI, parse_properties)
+from kafka_test.workflow import handle_session_start
 
 settings: Settings = get_settings()
 Session = sessionmaker(bind=init_db(settings.tidb_dsn))
@@ -132,7 +116,7 @@ def handle_committed_event(event_msg: dict, worker: str):
             if existing_payload:
                 session.add(client_sessions)
                 session.commit()
-                handle_session_start(client_sessions, event_msg, correlation_id, worker)
+                handle_session_start(client_sessions, correlation_id, worker)
             else:
                 logger.info("Duplicate data", message="Duplicate message skipped!")
 
@@ -150,11 +134,6 @@ def invalidate_old_session(mac: str):
                 session.commit()
 
                 session.refresh(old_session)
-                event_type = "SESSION_ENDED"
-                speed = None
-                service_type = None
-                send_data = send_to_binder(event_type, old_session, speed, service_type, None)
-                send_event(send_data)
                 logger.info(
                     "INVALIDATED",
                     correlation_id=old_session.correlation_id,
@@ -189,13 +168,7 @@ def handle_session_end(event_msg: dict):
                 message="Session ended",
                 payload=json.dumps(event_msg)
             )
-            speed = None
-            service_type = None
             session.commit()
-            ended_session = ongoing_session
-            event_type = "SESSION_ENDED"
-            send_data = send_to_binder(event_type, ended_session, speed, service_type, None)
-            send_event(send_data)
         else:
             logger.info(
                 event_msg.get("event"),
@@ -203,46 +176,13 @@ def handle_session_end(event_msg: dict):
                 payload=json.dumps(event_msg)
             )
 
-def send_event(send_data: SessionBinder):
-    binder_api = settings.binder_api
-
-    try:
-        response = requests.post(binder_api, json=send_data.model_dump())
-        response.raise_for_status()
-        logger.info("Send to binder", message="Success", data=send_data.model_dump())
-    except (requests.ConnectionError, requests.HTTPError, RequestException) as e:
-        logger.error("Send to binder failed", message=str(e))
-        raise BinderApiException(f"Process failed: {str(e)}")
-
-
-def get_speed_and_service_type_from_db(client_id):
-    with Session() as session:
-        package_id_result = session.query(Subscription.package_id).filter(
-            Subscription.client_id == client_id
-        ).first()
-        package_id = package_id_result[0] if package_id_result else None
-        get_speed_and_service_type = session.query(Service).with_entities(
-            Service.max_speed, Service.service_name
-        ).filter(
-            Service.package_id == package_id
-        ).first()
-        speed, service_type = get_speed_and_service_type
-        return speed, service_type
-
 def connect_plain_broker(topic, kafka_config: dict): 
     kafka_config.pop("security_protocol", None) 
     kafka_config.pop("sasl_mechanism", None) 
     kafka_config.pop("sasl_plain_username", None) 
     kafka_config.pop("sasl_plain_password", None) 
+    kafka_config.pop("topic", None)
     return KafkaConsumer(topic, **kafka_config)
-
-def connect_sasl_broker(topic, kafka_config: dict):
-    kafka_config["security_protocol"] = settings.sasl_protocol
-    kafka_config["sasl_mechanism"] = settings.sasl_mechanism
-    kafka_config["sasl_plain_username"] = settings.sasl_username
-    kafka_config["sasl_plain_password"] = settings.sasl_password
-    return KafkaConsumer(topic, **kafka_config)
-
 
 def initiate_consumer(consumer: KafkaConsumer, worker: str):
     if not consumer:
@@ -275,12 +215,13 @@ def create_kafka_consumer(worker):
 def try_broker(broker_list, kafka_config, worker): 
     consumer = None 
     try: 
-        temp_config = kafka_config.copy() 
+        temp_config = kafka_config.copy()
+        topic = temp_config['topic']
         temp_config["bootstrap_servers"] = broker_list 
-        consumer = connect_plain_broker(settings.kafka_topic, temp_config)
+        consumer = connect_plain_broker(topic, temp_config)
         if consumer:
             listener = Rebalance(logger)
-            consumer.subscribe([settings.kafka_topic], listener=listener)
+            consumer.subscribe([topic], listener=listener)
             consumer.poll(timeout_ms=1000)
             initiate_consumer(consumer, worker)
             return True
@@ -298,6 +239,5 @@ def try_broker(broker_list, kafka_config, worker):
 
 def initialize(worker: str):
     global logger
-    logger = get_instance_logger(worker)
     create_kafka_consumer(worker)
  

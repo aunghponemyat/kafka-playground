@@ -2,7 +2,7 @@
 name = "kafka-playground"
 version = "0.1.0"
 description = "Kafka Consumer & Producer"
-authors = ["aunghpone.myat <aunghpone.myat@frontiir.net>"]
+authors = ["Aung Phone Myat"]
 readme = "README.md"
 packages = [{include = "kafka_test", from = "src"}]
 
@@ -17,6 +17,12 @@ sqlalchemy-utils = "^0.41.1"
 pydantic-settings = "^2.2.1"
 structlog = "^24.1.0"
 colorama = "^0.4.6"
+netaddr = "^1.2.1"
+requests = "^2.31.0"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+kafka-test="kafka_test.cli:entrypoint"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.3.3"

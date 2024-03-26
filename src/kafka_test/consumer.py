@@ -15,7 +15,7 @@ from kafka_test.utils import (compute_hash, decode_hexastr, generate_uuid4,
 from kafka_test.workflow import handle_session_start
 
 settings: Settings = get_settings()
-Session = sessionmaker(bind=init_db(settings.tidb_dsn))
+Session = sessionmaker(bind=init_db(settings.db_dsn))
 
 class Rebalance(ConsumerRebalanceListener):
     def __init__(self, logger):

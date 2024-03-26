@@ -7,7 +7,7 @@ from kafka_test.database.db_models import Client, ClientSessions, init_db
 from kafka_test.models.config import Settings, get_settings
 
 settings: Settings = get_settings()
-Session = sessionmaker(bind=init_db(settings.tidb_dsn))
+Session = sessionmaker(bind=init_db(settings.db_dsn))
 
 def model_to_dict(model_instance: Client):
     return {column.name: getattr(model_instance, column.name) for column in model_instance.__table__.columns}

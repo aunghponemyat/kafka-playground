@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#
+# The script will prepare the project environment for development.
+# Run this script from the project root directory.
+#
+# Usage:
+#     $ cd path/to/project
+#     $ . ./scripts/setup
+#
+
+echo "Creating virtualenv (.venv/) in project..."
+poetry config --local virtualenvs.in-project true
+
+echo "Installing package dependencies..."
+poetry install
